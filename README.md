@@ -17,3 +17,21 @@ To ensure scalability, we used Ray for efficient, distributed batch inference.
 ✅ Result: 
 
 A production-ready, high-performance chatbot with optimized responsiveness. 🚀
+
+## Assignment 3
+### SSD and ONYX
+We fine-tuned the MobileNetV1 model for image classification and converted it to ONNX for cross-platform deployment. The model was optimized for faster inference using ONNX Runtime (ORT), ensuring quick and scalable predictions. 
+
+✅ This solution enables efficient deployment on edge devices and cloud environments for real-time applications.
+
+### Transfer Learning
+We implemented transfer learning for image classification using a Convolutional Neural Network (CNN), exploring two approaches:
+- Finetuning the ConvNet: We initialized the model with a pre-trained network (e.g., from Imagenet) and fine-tuned it on the target dataset.
+- Base Model as Fixed Feature Extractor: We froze the pre-trained weights and only trained the final fully connected layer.
+  
+✅  Findings:
+- Finetuned models outperformed fixed feature extractors, showing that fine-tuning all layers improves performance.
+- Transfer learning provided significant performance gains with fewer training examples and reduced computational costs.
+- Finetuning improved generalization, demonstrating the effectiveness of adapting pre-trained models to specific tasks.
+
+
